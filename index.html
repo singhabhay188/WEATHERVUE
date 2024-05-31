@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>WEATHERVUE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex overflow-hidden max-w-screen-2xl mx-auto">
+  <div id="sidebar" class="bg-black bg-[#ffffff80] h-screen w-32 relative">
+    <h1 class="text-8xl rotate-90 text-white left-1/2 absolute">WEATHERVUE</h1>
+  </div>
+
+  <div class="h-full flex-1 bg-[#0b121e] flex flex-col">
+    <nav class="w-full pt-8 pb-4 flex items-center justify-center">
+      <input id="searchBar" class="block py-2 px-4 text-center rounded-full shadow-lg outline-none text-zinc-700 uppercase" placeholder="Search for City...">
+  
+      </input>
+    </nav>
+    
+    <main class="flex-1 p-2 flex justify-around">
+
+      <div id="mainLeft" class="w-1/2 flex flex-col justify-between gap-3">
+        <div class="flex gap-5 justify-between text-white py-4 px-2 bg-[#ffffff90] border-2 border-white rounded-xl backdrop-blur-sm">
+          <div>
+            <h1 class="text-2xl lg:text-5xl font-semibold pb-3">Your City: Kanpur</h1>
+            <p class="text-sm pb-6">Chance of Rain: 0%</p>
+            <h1 class="text-2xl lg:text-5xl">31<sup>o</sup></h1>
+          </div>
+          <img src="./assets/sleet.svg" class="max-w-[200px]" alt="">
+        </div>
+    
+        <div class="py-4 px-2 bg-[#ffffff90] border-2 border-white rounded-xl backdrop-blur-sm">
+          <p class="text-sm font-bold text-gray-200 pb-3">TODAY'S FORECAST</p>
+          
+          <div class="grid gap-2 grid-cols-6 text-center">
+            <div class="border-r-2 border-gray-300 flex flex-col gap-3 px-2">
+              <p class="text-sm font-semibold">6:00 AM</p>
+              <img src="./assets/cloudy.svg" class="w-18" alt="">
+              <p class="font-bold text-xl text-white">25<sup>o</sup></p>
+            </div>
+            <div class="border-r-2 border-gray-300 flex flex-col gap-3 px-2">
+              <p class="text-sm font-semibold">6:00 AM</p>
+              <img src="./assets/cloudy.svg" class="w-18" alt="">
+              <p class="font-bold text-xl text-white">25<sup>o</sup></p>
+            </div>
+            <div class="border-r-2 border-gray-300 flex flex-col gap-3 px-2">
+              <p class="text-sm font-semibold">6:00 AM</p>
+              <img src="./assets/cloudy.svg" class="w-18" alt="">
+              <p class="font-bold text-xl text-white">25<sup>o</sup></p>
+            </div>
+            <div class="border-r-2 border-gray-300 flex flex-col gap-3 px-2">
+              <p class="text-sm font-semibold">6:00 AM</p>
+              <img src="./assets/cloudy.svg" class="w-18" alt="">
+              <p class="font-bold text-xl text-white">25<sup>o</sup></p>
+            </div>
+            <div class="border-r-2 border-gray-300 flex flex-col gap-3 px-2">
+              <p class="text-sm font-semibold">6:00 AM</p>
+              <img src="./assets/cloudy.svg" class="w-18" alt="">
+              <p class="font-bold text-xl text-white">25<sup>o</sup></p>
+            </div>
+            <div class="flex flex-col gap-3 px-2">
+              <p class="text-sm font-semibold">6:00 AM</p>
+              <img src="./assets/cloudy.svg" class="w-18" alt="">
+              <p class="font-bold text-xl text-white">25<sup>o</sup></p>
+            </div>
+            
+          </div>
+        </div>
+    
+    
+        <div class="py-4 px-2 bg-[#ffffff90] border-2 border-white rounded-xl backdrop-blur-sm">
+          <p class="text-sm font-bold text-gray-500">TODAY'S FORECAST</p>
+          <div class="flex">
+            <div class="flex-1">
+              <p class="text-sm">Wind</p>
+              <p class="text-lg">5 km/h</p>
+            </div>
+            <div class="flex-1">
+              <p class="text-sm">Humidity</p>
+              <p class="text-lg">50%</p>
+            </div>
+            <div class="flex-1">
+              <p class="text-sm">Visibility</p>
+              <p class="text-lg">10 km</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="mainRight"  class="w-[40%]">
+        <div class="py-4 px-2 mb-4 bg-[#ffffff90] border-2 border-white rounded-xl backdrop-blur-sm flex flex-col h-full">
+          <p class="font-bold text-gray-200 pb-3">7 DAY FORECAST</p>
+          
+          <div class="grid gap-2 grid-rows- text-center flex-1">
+            <div class="flex items-center justify-around">
+              <p class="text-sm font-semibold">Today</p>
+              <div class="flex gap-2 items-center">
+                <img src="./assets/clear-day.svg" class="w-12" alt="">
+                <p class="font-bold text-xl text-white">Sunny</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Max Temp</p>
+                <p class="text-xl">25&deg;</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Min Temp</p>
+                <p class="text-xl">20&deg;</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-around">
+              <p class="text-sm font-semibold">Today</p>
+              <div class="flex gap-2 items-center">
+                <img src="./assets/clear-night.svg" class="w-12" alt="">
+                <p class="font-bold text-xl text-white">Sunny</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Max Temp</p>
+                <p class="text-xl">25&deg;</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Min Temp</p>
+                <p class="text-xl">20&deg;</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-around">
+              <p class="text-sm font-semibold">Today</p>
+              <div class="flex gap-2 items-center">
+                <img src="./assets/cloudy.svg" class="w-12" alt="">
+                <p class="font-bold text-xl text-white">Sunny</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Max Temp</p>
+                <p class="text-xl">25&deg;</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Min Temp</p>
+                <p class="text-xl">20&deg;</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-around">
+              <p class="text-sm font-semibold">Today</p>
+              <div class="flex gap-2 items-center">
+                <img src="./assets/fog.svg" class="w-12" alt="">
+                <p class="font-bold text-xl text-white">Sunny</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Max Temp</p>
+                <p class="text-xl">25&deg;</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Min Temp</p>
+                <p class="text-xl">20&deg;</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-around">
+              <p class="text-sm font-semibold">Today</p>
+              <div class="flex gap-2 items-center">
+                <img src="./assets/hail.svg" class="w-12" alt="">
+                <p class="font-bold text-xl text-white">Sunny</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Max Temp</p>
+                <p class="text-xl">25&deg;</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Min Temp</p>
+                <p class="text-xl">20&deg;</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-around">
+              <p class="text-sm font-semibold">Today</p>
+              <div class="flex gap-2 items-center">
+                <img src="./assets/partly-cloudy-day.svg" class="w-12" alt="">
+                <p class="font-bold text-xl text-white">Sunny</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Max Temp</p>
+                <p class="text-xl">25&deg;</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Min Temp</p>
+                <p class="text-xl">20&deg;</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-around">
+              <p class="text-sm font-semibold">Today</p>
+              <div class="flex gap-2 items-center">
+                <img src="./assets/partly-cloudy-night.svg" class="w-12" alt="">
+                <p class="font-bold text-xl text-white">Sunny</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Max Temp</p>
+                <p class="text-xl">25&deg;</p>
+              </div>
+              <div class="text-gray-200">
+                <p class="text-xs">Min Temp</p>
+                <p class="text-xl">20&deg;</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  
+  
+      <!-- <h2>5:05 PM, Mon, Nov 23, 2020</h2>
+  
+      <div class="py-3">
+        <i class="ri-map-pin-2-fill text-2xl"></i>
+        <h3 class="text-xl">Location: Kanpur, UP, India</h3>
+        <h3 class="text-xl">Latitude: 26.4356</h3>
+        <h3 class="text-xl">Longitude: 80.3299,</h3>
+        <h3 class="text-xl">Timezone: Asia/Kolkata</h3>
+        
+      </div> -->
+  
+    </main>
+  </div>
+
+
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>

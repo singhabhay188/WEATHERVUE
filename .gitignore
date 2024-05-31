@@ -1,0 +1,10 @@
+api.js
+package.json
+package-lock.json
+node_modules
+tailwind.config.js
+./assets
+temp.js
+temp2.js
+script.js
+assets
